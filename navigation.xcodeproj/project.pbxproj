@@ -15,6 +15,10 @@
 		454184172416825F00E23163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454184152416825F00E23163 /* LaunchScreen.storyboard */; };
 		454184222416826000E23163 /* navigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454184212416826000E23163 /* navigationTests.swift */; };
 		4541842D2416826000E23163 /* navigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541842C2416826000E23163 /* navigationUITests.swift */; };
+		4541843B24191E4000E23163 /* TabOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541843A24191E4000E23163 /* TabOneVC.swift */; };
+		4541843D24191E5800E23163 /* TabTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541843C24191E5800E23163 /* TabTwoVC.swift */; };
+		4541843F24191E6F00E23163 /* TabThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541843E24191E6F00E23163 /* TabThreeVC.swift */; };
+		4541844124191F9D00E23163 /* ManagmentTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541844024191F9D00E23163 /* ManagmentTabVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		454184282416826000E23163 /* navigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = navigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4541842C2416826000E23163 /* navigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationUITests.swift; sourceTree = "<group>"; };
 		4541842E2416826000E23163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4541843A24191E4000E23163 /* TabOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneVC.swift; sourceTree = "<group>"; };
+		4541843C24191E5800E23163 /* TabTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTwoVC.swift; sourceTree = "<group>"; };
+		4541843E24191E6F00E23163 /* TabThreeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabThreeVC.swift; sourceTree = "<group>"; };
+		4541844024191F9D00E23163 /* ManagmentTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagmentTabVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				4541840C2416825C00E23163 /* SceneDelegate.swift */,
 				4541840E2416825C00E23163 /* ViewController.swift */,
 				454184102416825C00E23163 /* Main.storyboard */,
+				4541844024191F9D00E23163 /* ManagmentTabVC.swift */,
+				4541843A24191E4000E23163 /* TabOneVC.swift */,
+				4541843C24191E5800E23163 /* TabTwoVC.swift */,
+				4541843E24191E6F00E23163 /* TabThreeVC.swift */,
 				454184132416825F00E23163 /* Assets.xcassets */,
 				454184152416825F00E23163 /* LaunchScreen.storyboard */,
 				454184182416825F00E23163 /* Info.plist */,
@@ -260,8 +272,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4541840F2416825C00E23163 /* ViewController.swift in Sources */,
+				4541843F24191E6F00E23163 /* TabThreeVC.swift in Sources */,
 				4541840B2416825C00E23163 /* AppDelegate.swift in Sources */,
+				4541843D24191E5800E23163 /* TabTwoVC.swift in Sources */,
 				4541840D2416825C00E23163 /* SceneDelegate.swift in Sources */,
+				4541844124191F9D00E23163 /* ManagmentTabVC.swift in Sources */,
+				4541843B24191E4000E23163 /* TabOneVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
