@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var obj1: UIImageView!
+    @IBAction func tapAction(_ sender: Any) {
+        obj1.isHidden = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

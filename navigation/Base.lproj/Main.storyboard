@@ -7,6 +7,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="pXz-GZ-mDz">
+            <objects>
+                <viewController id="dYX-zq-o49" customClass="ViewController" customModule="navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jun-w7-fwH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="livestreamcover copy" translatesAutoresizingMaskIntoConstraints="NO" id="atJ-rN-aTe">
+                                <rect key="frame" x="20" y="82" width="295" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8Pz-yb-BR9" appends="YES" id="qTu-st-5gO"/>
+                                </connections>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hurricane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="L3A-sB-6ab">
+                                <rect key="frame" x="87" y="406" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oAi-jP-5Cm"/>
+                    </view>
+                    <connections>
+                        <outlet property="obj1" destination="L3A-sB-6ab" id="VLe-3X-Pok"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jpl-hv-uID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8Pz-yb-BR9">
+                    <connections>
+                        <action selector="tapAction:" destination="dYX-zq-o49" id="JEw-uz-82q"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-3401.449275362319" y="284.59821428571428"/>
+        </scene>
         <!--Page 3-->
         <scene sceneID="cWG-F4-xy3">
             <objects>
@@ -111,6 +148,25 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NOy-KO-Y0r">
+                                <rect key="frame" x="237" y="113" width="132" height="151"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="On to the next (Mr. Messner click this for HW 8)">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <font key="NSFont" metaFont="system" size="21"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="dYX-zq-o49" kind="showDetail" id="3S1-mA-Und"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="4JW-W4-zZM"/>
@@ -543,6 +599,8 @@
         <image name="E3Logo_Color_RGB_white_tm" width="1881" height="1155"/>
         <image name="Marvel's Avengers Key Art 1920x1080" width="1920" height="1080"/>
         <image name="doom_eternal_main-1280x720" width="1280" height="720"/>
+        <image name="hurricane" catalog="system" width="44" height="64"/>
         <image name="images-25-1-739x375" width="739" height="375"/>
+        <image name="livestreamcover copy" width="40" height="40"/>
     </resources>
 </document>
